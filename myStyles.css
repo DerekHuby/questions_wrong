@@ -18,3 +18,9 @@ body {
 font-family:'Raleway';
 background-color: lightblue;
 }
+
+h1, h2 {
+color: black;
+margin: 25px 10px 10px 25px;
+/border: 1px solid black;
+}
