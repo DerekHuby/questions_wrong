@@ -17,3 +17,6 @@
   align-items: center;
   justify-content: center;
 }
+
+body { margin:0;
+background-color:#CEF1FC !important }
