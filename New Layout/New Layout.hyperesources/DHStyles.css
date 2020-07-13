@@ -1,0 +1,27 @@
+.DHQuestionTextNarrow {
+color:#005477 !important;
+}
+
+.DHQuestionTextMedium {
+
+color:#005477 !important;
+}
+
+.DHQuestionTextWide {
+
+color:#005477 !important;
+}
+
+[role="button"] {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixedTop {
+    background-color: white;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
