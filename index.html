@@ -8,11 +8,24 @@
     <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Raleway&subset=latin">
   <link rel="stylesheet" type="text/css" href="myStyles.css">
+  <script type="text/javascript" charset="utf-8" src="tabScript.js"></script>
 </head>
 <body>
-    <h1>Index</h1><h3>Version 0.007</h3>
-    <hr>
-    <h2>Number - Entry Level 2</h2>
+<div id = "header">
+    <h1>Index</h1><h3>Version 0.010</h3>
+
+   <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" id = "NumberBtn" onclick="openTopic(event, 'Number')">Number</button>
+  <button class="tablinks" id = "Ops_CalcsBtn" onclick="openTopic(event, 'Ops_Calcs')">Ops and Calcs</button>
+  <button class="tablinks" id = "SSMBtn" onclick="openTopic(event, 'SSM')">SSM</button>
+  <button class="tablinks" id = "HIBtn" onclick="openTopic(event, 'HI')">Data</button>
+</div>
+</div>
+
+<!-- Tab content -->
+<div id="Number" class="tabcontent">
+   <h2>Number - Entry Level 2</h2>
     
     <p><button onclick="window.location.href='Page_NE2.001A.html'">NE2.001A</button>
     <button onclick="window.location.href='Page_NE2.001B.html'">NE2.001B</button>
@@ -49,39 +62,45 @@
 	<button onclick="window.location.href='Page_NE2.009B.html'">NE2.009B</button>
 
 	1009 - Half Price</p>
-<hr>
-<h1>Previous Versions</h2>
-	<h2>Number</h2>
-	
-	<p><button onclick="window.location.href='Activity_NL1.03.html'">L1: Question 3</button>
-	Negative Temperature</p>
-	
-	<p><button onclick="window.location.href='Activity_NL2.05.html'">L2: Question 5</button>
-	Students on the Bus</p>
-	
-	<h2>Operations and Calculations</h2>
-	
-	<p><button onclick="window.location.href='Activity_OCE2.02.html'">E2: Question 2</button>
-	Chocolate Change</p>
-	
-	<p><button onclick="window.location.href='Activity_OCE3.03.html'">E3: Question 3</button>
-	Change from £995</p>
-	
-	<h2>Shape, Space and Measures</h2>
-	
-	<p><button onclick="window.location.href='Activity_SSME3.06.html'">E3: Question 6</button>
-	Compass Directions</p>
-	
-	<p><button onclick="window.location.href='Activity_SSML1.04.html'">L1: Question 4</button>
-	Platform Clock</p>
-	
-	<h2>Handling Information</h2>
-	
-	<p><button onclick="window.location.href='Activity_HIL2.08.html'">L2: Question 8</button>
-	Accident Percentages</p>
-	<p><button onclick="window.location.href='Activity_HIL3.08.html'">L3: Question 8</button>
-	Quarterly sales</p>
 
-	
+</div>
+
+<div id="Ops_Calcs" class="tabcontent">
+  <h2>Operations and Calculations - Entry Level 2</h2>
+  <p><button onclick="window.location.href='Page_OCE2.001A.html'">OCE2.001A</button>
+    <button onclick="window.location.href='Page_OCE2.001B.html'">OCE2.001B</button>
+    2001 - Money Total</p>
+    
+	 <p><button onclick="window.location.href='Page_OCE2.002A.html'">OCE2.002A</button>
+	 <button onclick="window.location.href='Page_OCE2.002B.html'">OCE2.002B</button>
+	2002 - Chocolate Change</p>
+	 <p><button onclick="window.location.href='Page_OCE2.003A.html'">OCE2.003A</button>
+	 <button onclick="window.location.href='Page_OCE2.003B.html'">OCE2.003B</button>
+	2003 - £5 Notes</p>
+
+</div>
+
+<div id="SSM" class="tabcontent">
+ <h2>SSM - Entry Level 2</h2>
+  <p>This is Shape, Space and Measures...</p>
+</div>
+
+	<div id="HI" class="tabcontent">
+	 <h2>Handling Information - Entry Level 2</h2>
+  <p>This is Handling Information...</p>
+</div>
+<script>
+console.log(localStorage.getItem('currentTabName'));
+// Get the element with id="defaultOpen" and click on it
+var currentTabName = localStorage.getItem('currentTabName');
+if (typeof(currentTabName) == 'undefined') {
+document.getElementById("NumberBtn").click();
+} else {
+document.getElementById(currentTabName + "Btn").click();
+}
+
+//document.getElementById(currentTabName).click();
+
+</script>
 </body>
 </html>
