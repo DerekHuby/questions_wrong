@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id = "header">
-    <h1>Index</h1><h3>Version 0.017</h3>
+    <h1>Index</h1><h3>Version 0.019</h3>
 
 </div>
    <!-- Tab links -->
@@ -134,11 +134,20 @@
     <p><button onclick="window.location.href='Page_HIE2.002A.html'">HIE2.002A</button>
     <button onclick="window.location.href='Page_HIE2.002B.html'">HIE2.002B</button>
     4002 - Chart Types</p>
-
+ <p><button onclick="window.location.href='Page_HIE2.003A.html'">HIE2.003A</button>
+    <button onclick="window.location.href='Page_HIE2.003B.html'">HIE2.003B</button>
+    4003 - Maximum Temperature</p>
+    <p><button onclick="window.location.href='Page_HIE2.004A.html'">HIE2.004A</button>
+    <button onclick="window.location.href='Page_HIE2.004B.html'">HIE2.004B</button>
+    4004 - Probability Words</p>
+<hr>
+<h2>New Template</h2>
+ <p><button onclick="window.location.href='Page_HIE2.005A.html'">HIE2.005A</button>
+    <button onclick="window.location.href='Page_HIE2.005B.html'">HIE2.005B</button>
+    4005 - Meal Table</p>
 </div>
 <script>
 console.log(localStorage.getItem('currentTabName'));
-// Get the element with id="defaultOpen" and click on it
 var currentTabName = localStorage.getItem('currentTabName');
 if (typeof(currentTabName) == 'undefined') {
 document.getElementById("NumberBtn").click();
