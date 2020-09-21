@@ -48,7 +48,7 @@ margin: 25px 10px 10px 25px;
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #dde;
 }
 
 /* Create an active/current tablink class */
